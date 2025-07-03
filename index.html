@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Behavior Test Caffeina - Mattia Tisi">
+    <meta name="author" content="Mattia Tisi">
+    <meta name="keywords" content="Behavior Test Caffeina, Mattia Tisi, Web Development, Web Design, Web Performance, Web Accessibility, Web Optimization, Web Development, Web Design, Web Performance, Web Accessibility, Web Optimization">
+    <title>Behavior Test Caffeina - Mattia Tisi</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script> 
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.4/dist/lenis.css">
+
+</head>
+<body>
+    <header>
+        <nav class="desktop-nav">
+            <a href="index.html" aria-label="Behavior Test Home">
+                <svg class="logo" fill="none" height="48" viewBox="0 0 220 48" width="220" xmlns="http://www.w3.org/2000/svg"><g fill="var(--blue-light)"><path clip-rule="evenodd" d="m65.7728 31.8549c1.5048 1.0113 3.2771 1.5376 5.0833 1.5091.7678.0064 1.5341-.0674 2.287-.22.6586-.1355 1.2981-.3528 1.9042-.6467.5728-.2807 1.1165-.6186 1.6229-1.0089.5177-.402 1.0008-.8478 1.4441-1.3324l-2.0192-2.0698c-.6977.6739-1.4795 1.2523-2.3256 1.7204-.7841.4227-1.7214.6341-2.8118.6341-.815.0078-1.6218-.1643-2.3642-.5045-.7123-.3276-1.3514-.7988-1.8781-1.3843-.5364-.5989-.953-1.2973-1.2268-2.0566-.2924-.7988-.4396-1.6446-.4348-2.4964v-.0518c-.0056-.8478.1417-1.6896.4348-2.4837.2742-.7513.691-1.4412 1.2268-2.0307.5296-.5791 1.1681-1.0453 1.8781-1.3712.7424-.3403 1.5492-.5125 2.3642-.5044.9477-.0172 1.8857.1956 2.7353.6208.8289.4342 1.5943.9826 2.2744 1.6296l2.0193-2.354c-.4241-.412-.877-.7925-1.3552-1.1384-.4877-.3512-1.0102-.6503-1.559-.8923-.5954-.2605-1.2166-.4557-1.853-.5821-.7367-.1441-1.4856-.2134-2.2359-.207-1.2808-.0166-2.5512.2344-3.7318.7373-1.0917.4684-2.0811 1.1508-2.9114 2.0076-.8302.8569-1.4851 1.8713-1.9267 2.9851-.4599 1.155-.6916 2.3899-.6822 3.6352v.0514c-.0083 1.2504.2278 2.4902.6948 3.6479.6749 1.696 1.8416 3.1453 3.3465 4.1567zm27.9313-17.0401h-2.9134l-7.8719 18.2387h3.2207l1.8402-4.372h8.4598l1.8143 4.372h3.3232zm-1.5078 3.8029 3.093 7.2436h-6.1601zm15.5147-3.6736h13.29v2.8717h-10.172v4.9932h9.022v2.8716h-9.022v7.3731h-3.118zm33.123 0h-13.291v18.1096h3.118v-7.3731h9.022v-2.8716h-9.022v-4.9932h10.173zm6.544 0h13.238v2.8717h-10.121v4.657h8.972v2.8715h-8.972v4.8378h10.249v2.8716h-13.366zm23.487 0h-3.118v18.1096h3.118zm7.872 0h2.908l9.564 12.5215v-12.5215h3.118v18.1096h-2.627l-9.845-12.8835v12.8835h-3.118zm32.51-.1293h-2.913l-7.872 18.2387h3.22l1.839-4.372h8.46l1.816 4.372h3.322zm-1.508 3.8029 3.092 7.2436h-6.159z" fill-rule="evenodd"/><path d="m38.959 8.60504-12.577-7.35967c-1.4002-.815925-2.9875-1.24537-4.6032-1.24537s-3.203.429445-4.6032 1.24537l-12.57708 7.35967c-1.39853.81508-2.56003 1.98896-3.36738 3.40336-.807343 1.4144-1.23199655 3.0193-1.2311387 4.6527v14.7096c-.00084706 1.6334.4238167 3.2383 1.2311687 4.6526.80736 1.4145 1.96887 2.5884 3.36742 3.4035l12.57711 7.3199c1.3986.8209 2.9865 1.2533 4.6032 1.2533s3.2046-.4324 4.6032-1.2533l12.577-7.3497c1.3965-.8174 2.5564-1.9918 3.3633-3.4057.807-1.4138 1.2328-3.0175 1.2347-4.6504v-14.6798c-.0019-1.6329-.4277-3.2366-1.2347-4.6504-.807-1.4139-1.9668-2.58833-3.3634-3.40566zm-11.464 16.01156-5.4693 8.4286c-.0485.0747-.1198.1313-.2032.1611-.0833.0299-.1739.0313-.2581.0041-.0842-.0273-.1571-.0817-.208-.1548-.0507-.0733-.0763-.1613-.073-.2507l.2261-6.0765c.0011-.0282-.0066-.056-.0218-.0796s-.0373-.0419-.0632-.0523l-4.9845-2.0023c-.1117-.0448-.2121-.1143-.2939-.2033-.0818-.0889-.143-.1953-.1792-.3113-.0362-.1159-.0464-.2386-.03-.359.0166-.1204.0593-.2356.1253-.3373l5.4691-8.4285c.0485-.0748.12-.1314.2032-.1612.0833-.0299.174-.0313.2582-.0041.0841.0273.1572.0817.2079.1549.0508.0732.0765.1613.0732.2506l-.2263 6.0765c-.0009.0282.0066.0561.0218.0796.0153.0237.0374.042.0633.0524l4.9845 2.0023c.1116.0448.212.1142.2938.2033.0819.089.1431.1953.1793.3112.0361.1159.0463.2386.0299.359s-.0593.2356-.1251.3373z"/></g></svg>
+            </a>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.5 6.5h15M4.5 12h15m-15 5.5h15"/>
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <ul>
+            <li><a href="#ambition"><h2>Ambition</h2></a></li>
+            <li><a href="#excellence"><h2>Excellence</h2></a></li>
+            <li><a href="#caring"><h2>Caring</h2></a></li>
+            <li><a href="#growth"><h2>Growth</h2></a></li>
+            <li><a href="#courage"><h2>Courage</h2></a></li>
+            <li><a href="#proactivity"><h2>Proactivity</h2></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <article id="ambition"><p>Ambisco a contribuire al miglioramento dell'esperienza digitale degli utenti. Spesso, quando navigo un sito web, provo un senso di insoddisfazione. <br> <br>
+                Il mio obiettivo oggi è trasformare quell'insoddisfazione in opportunità, ideando e sviluppando siti web che uniscano una solida user experience, accessibilità e ottimizzazione nelle performance seguendo le varie best practices.
+                </p></article>  
+            <article id="excellence"><p>Nell'ultimo anno mi sono dedicato a consolidare le mie competenze, raccontandole attraverso lo sviluppo del mio portfolio. Per me progettare un sito non significa solo curare l'estetica o scrivere codice pulito, ma anche ottimizzare ogni aspetto legato alle performance. <br> <br>
+                Ottimizzo il caricamento delle risorse, importando uno script solo quando realmente necessario; come nel caso di un'interazione specifica, ad esempio al click di un menu.
+                </p></article>  
+            <article id="caring"><p>All'interno di un team mi definisco un playmaker: non mi limito a focalizzarmi sui task individuali ma mi prendo cura del raggiungimento dell'obiettivo comune, offrendo aiuto e chiedendolo quando necessario. Questo mio approccio si estende non solo verso i colleghi, ma anche ai clienti. <br> <br>
+                Ad esempio, durante la realizzazione di un e-commerce, ci è stato fornito un file CSV dei prodotti in un formato disordinato e poco funzionale. Pur non rientrando nelle mie mansioni, ho preso l'iniziativa di supportare il cliente nell'organizzazione di una struttura dati migliore e più efficiente.
+                </p></article>  
+            <article id="growth"><p>Credo che la 1° legge di Moore possa essere estesa a diversi ambiti del mondo digitale: tutto evolve rapidamente, e per questo sono costantemente alla ricerca di nuove conoscenze e investo su me stesso per migliorare continuamente. <br> <br>
+                La passione che ho in questo ambito mi spinge a rimanere aggiornato anche nel tempo libero, esplorando con curiosità le evoluzioni del panorama digitale in tutte le sue sfaccettature per poi applicarle in ambito lavorativo.
+                </p></article>  
+            <article id="courage"><p>Nel web development si tende spesso a restare su tecnologie considerate "sicure", come WordPress. Sebbene in passato sia stata una soluzione ideale per la creazione di siti, oggi non rappresenta più la scelta migliore. <br> <br>
+                Ad esempio, consiglio l'uso di Astro per la realizzazione di siti statici, in quanto garantisce ottime performance senza introdurre complessità inutili. Al contrario, React o Next.js, pur essendo ottime soluzioni per applicazioni SSR, possono risultare overkill per questo tipo di progetti.                </p></article>  
+            <article id="proactivity"><p>
+                Un esempio concreto in cui ho preso l'iniziativa è all'interno dell'azienda di famiglia, dove attualmente ricopro un ruolo chiave nella definizione del brand, del prodotto e nella strutturazione complessiva del business plan. Pur non essendomi stato richiesto formalmente alcun incarico, ho scelto di mettermi in gioco, integrando le diverse "behavior" precedentemente descritte per costruire un'identità che superi i confini della tipica piccola realtà locale.
+                </p></article>  
+            <footer>
+                <p>&copy; 2025 Designed and Developed by Mattia Tisi</p>
+            </footer>
+        </section>
+       
+    </main>
+
+    <aside>
+        <h1>Behaviors <span> Test Caffeina - Mattia Tisi </span></h1>   
+        <nav>
+            <ul>
+                <li><a href="#ambition"><h2>Ambition</h2></a></li>
+                <li><a href="#excellence"><h2>Excellence</h2></a></li>
+                <li><a href="#caring"><h2>Caring</h2></a></li>
+                <li><a href="#growth"><h2>Growth</h2></a></li>
+                <li><a href="#courage"><h2>Courage</h2></a></li>
+                <li><a href="#proactivity"><h2>Proactivity</h2></a></li>
+            </ul>  
+        </nav>
+    </aside>
+
+   
+
+    <script type="module">
+        import initAnimations from "./scripts/main.mjs";
+        
+        initAnimations();
+    </script>
+</body>
+</html>
